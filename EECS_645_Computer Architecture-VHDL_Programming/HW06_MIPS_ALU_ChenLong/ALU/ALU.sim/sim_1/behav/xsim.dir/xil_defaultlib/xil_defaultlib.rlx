@@ -1,0 +1,10 @@
+0.6
+2017.1
+Jun 22 2017
+18:06:49
+H:/EECS_645/HW06_MIPS_ALU_ChenLong/design_sources/alu.vhd,1507864133,vhdl,,,,alu,,,,,,,,
+H:/EECS_645/HW06_MIPS_ALU_ChenLong/design_sources/my_packages/ieee_2008/math_real-body.vhdl,1464879897,vhdl,,,,,,,,,,,,
+H:/EECS_645/HW06_MIPS_ALU_ChenLong/design_sources/my_packages/ieee_2008/math_real.vhdl,1464879897,vhdl,H:/EECS_645/HW06_MIPS_ALU_ChenLong/design_sources/alu.vhd;H:/EECS_645/HW06_MIPS_ALU_ChenLong/design_sources/my_packages/ieee_2008/math_real-body.vhdl;H:/EECS_645/HW06_MIPS_ALU_ChenLong/design_sources/my_packages/my_package-body.vhd;H:/EECS_645/HW06_MIPS_ALU_ChenLong/simulation_sources/alu_tb.vhd,,,math_real,,,,,,,,
+H:/EECS_645/HW06_MIPS_ALU_ChenLong/design_sources/my_packages/my_package-body.vhd,1506116651,vhdl,,,,,,,,,,,,
+H:/EECS_645/HW06_MIPS_ALU_ChenLong/design_sources/my_packages/my_package.vhd,1506981956,vhdl,H:/EECS_645/HW06_MIPS_ALU_ChenLong/design_sources/alu.vhd;H:/EECS_645/HW06_MIPS_ALU_ChenLong/design_sources/my_packages/my_package-body.vhd;H:/EECS_645/HW06_MIPS_ALU_ChenLong/simulation_sources/alu_tb.vhd,,,my_package,,,,,,,,
+H:/EECS_645/HW06_MIPS_ALU_ChenLong/simulation_sources/alu_tb.vhd,1506987161,vhdl,,,,alu_tb,,,,,,,,

@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1_sdx (64-bit)
+# SW Build 1915620 on Thu Jun 22 17:54:58 MDT 2017
+# IP Build 1908669 on Thu Jun 22 19:20:41 MDT 2017
+# Start of session at: Thu Oct 12 22:15:28 2017
+# Process ID: 9032
+# Current directory: H:/EECS_645/HW06_MIPS_ALU_ChenLong/ALU/ALU.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source H:/EECS_645/HW06_MIPS_ALU_ChenLong/ALU/ALU.sim/sim_1/behav/xsim.dir/alu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: H:/EECS_645/HW06_MIPS_ALU_ChenLong/ALU/ALU.sim/sim_1/behav/webtalk.log
+# Journal file: H:/EECS_645/HW06_MIPS_ALU_ChenLong/ALU/ALU.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in C:/Xilinx/SDx/2017.1/Vivado/scripts/init.tcl is deprecated. Please use Webtalk_init.tcl 
+Sourcing tcl script 'C:/Xilinx/SDx/2017.1/Vivado/scripts/init.tcl'
+Loaded SDSoC Platform Tcl Library
+source H:/EECS_645/HW06_MIPS_ALU_ChenLong/ALU/ALU.sim/sim_1/behav/xsim.dir/alu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 12 22:15:28 2017...
