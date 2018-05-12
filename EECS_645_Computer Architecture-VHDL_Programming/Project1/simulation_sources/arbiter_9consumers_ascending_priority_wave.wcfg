@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="arbiter_9consumers_ascending_priority_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="arbiter_9consumers_ascending_priority_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="92600002fs"></ZoomEndTime>
+      <Cursor1Time time="139946000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="12" />
+   <wvobject type="divider" fp_name="divider20">
+      <obj_property name="label">Parameters</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/arbiter_9consumers_ascending_priority_tb/n_consumers" type="other">
+      <obj_property name="ElementShortName">n_consumers</obj_property>
+      <obj_property name="ObjectShortName">n_consumers</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider10">
+      <obj_property name="label">Control Inputs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/arbiter_9consumers_ascending_priority_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/arbiter_9consumers_ascending_priority_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider11">
+      <obj_property name="label">Requests</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/arbiter_9consumers_ascending_priority_tb/REQ_VEC" type="array">
+      <obj_property name="ElementShortName">REQ_VEC[9:1]</obj_property>
+      <obj_property name="ObjectShortName">REQ_VEC[9:1]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider12">
+      <obj_property name="label">Acknowledgments</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/arbiter_9consumers_ascending_priority_tb/ACK_VEC" type="array">
+      <obj_property name="ElementShortName">ACK_VEC[9:1]</obj_property>
+      <obj_property name="ObjectShortName">ACK_VEC[9:1]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider14">
+      <obj_property name="label">Internal States</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/arbiter_9consumers_ascending_priority_tb/uut/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/arbiter_9consumers_ascending_priority_tb/uut/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+</wave_config>
