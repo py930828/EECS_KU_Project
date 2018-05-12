@@ -1,0 +1,171 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Sep 28 15:06:52 2017
+# Process ID: 1564
+# Current directory: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11528 C:\Users\long\Desktop\HW04_MIPS_RegFile_Chen\MIPS_RegFile\MIPS_RegFile.xpr
+# Log file: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/vivado.log
+# Journal file: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+set_property -name {xsim.simulate.runtime} -value {1000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+set_property -name {xsim.simulate.runtime} -value {250ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+set_property -name {xsim.simulate.runtime} -value {300} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.runtime} -value {300ns} -objects [get_filesets sim_1]
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+close_sim

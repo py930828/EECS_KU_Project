@@ -1,0 +1,2851 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Sep 28 15:06:52 2017
+# Process ID: 1564
+# Current directory: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11528 C:\Users\long\Desktop\HW04_MIPS_RegFile_Chen\MIPS_RegFile\MIPS_RegFile.xpr
+# Log file: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/vivado.log
+# Journal file: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 814.605 ; gain = 118.461
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 28 16:09:02 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 902.637 ; gain = 60.090
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 00:19:08 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+ERROR: Index 28 out of bound 0 to 22
+Time: 215 ns  Iteration: 1  Process: /regfile_tb/uut/line__33
+  File: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd
+
+HDL Line: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:46
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 911.941 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 00:24:57 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+ERROR: Index 28 out of bound 0 to 22
+Time: 215 ns  Iteration: 1  Process: /regfile_tb/uut/line__33
+  File: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd
+
+HDL Line: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:46
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 914.977 ; gain = 0.000
+set_property -name {xsim.simulate.runtime} -value {1000ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 00:26:55 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Index 28 out of bound 0 to 22
+Time: 215 ns  Iteration: 1  Process: /regfile_tb/uut/line__33
+  File: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd
+
+HDL Line: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:46
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 949.852 ; gain = 3.793
+set_property -name {xsim.simulate.runtime} -value {250ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 00:33:06 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 250ns
+ERROR: Index 28 out of bound 0 to 22
+Time: 215 ns  Iteration: 1  Process: /regfile_tb/uut/line__33
+  File: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd
+
+HDL Line: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:46
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 250ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 958.125 ; gain = 0.395
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 00:46:43 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 250ns
+ERROR: Index 28 out of bound 0 to 22
+Time: 215 ns  Iteration: 1  Process: /regfile_tb/uut/line__33
+  File: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd
+
+HDL Line: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:46
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 250ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 958.125 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 5 elements ; expected 32 [C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:31]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit regfile_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 23 elements ; expected 32 [C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:31]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit regfile_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 23 elements ; expected 32 [C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:31]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit regfile_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 23 elements ; expected 32 [C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:31]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit regfile_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 00:55:56 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 250ns
+ERROR: Index 28 out of bound 0 to 22
+Time: 215 ns  Iteration: 1  Process: /regfile_tb/uut/line__32
+  File: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd
+
+HDL Line: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 250ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 959.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 5 elements ; expected 32 [C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:39]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit regfile_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 01:09:31 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 250ns
+ERROR: Index 28 out of bound 0 to 22
+Time: 215 ns  Iteration: 1  Process: /regfile_tb/uut/line__33
+  File: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd
+
+HDL Line: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:49
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 250ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 959.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 01:15:43 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 250ns
+ERROR: Index 28 out of bound 0 to 22
+Time: 215 ns  Iteration: 1  Process: /regfile_tb/uut/line__33
+  File: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd
+
+HDL Line: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:49
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 250ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 966.949 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -name {xsim.simulate.runtime} -value {300} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.runtime} -value {300ns} -objects [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 01:26:21 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+ERROR: Index 28 out of bound 0 to 22
+Time: 215 ns  Iteration: 1  Process: /regfile_tb/uut/line__33
+  File: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd
+
+HDL Line: C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd:49
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 966.949 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 01:27:32 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 01:44:31 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 01:47:26 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 01:51:27 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 01:53:45 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 01:57:02 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:01:19 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:02:37 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:05:48 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:06:06 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:10:47 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:13:44 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:18:42 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:24:43 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:33:09 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:37:46 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:38:41 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:42:46 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:43:47 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:44:37 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:46:43 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:50:56 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:53:43 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:55:42 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 02:56:27 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 03:00:10 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'regfile_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj regfile_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/ieee_2008/math_real-body.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/my_packages/my_package-body.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/design_sources/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 08e2b9410c8643a480233a0e8f707e7b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot regfile_tb_behav xil_defaultlib.regfile_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.my_package
+Compiling package xil_defaultlib.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavior of entity xil_defaultlib.regfile_tb
+Built simulation snapshot regfile_tb_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav/xsim.dir/regfile_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 29 03:00:49 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/MIPS_RegFile/MIPS_RegFile.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_tb_behav -key {Behavioral:sim_1:Functional:regfile_tb} -tclbatch {regfile_tb.tcl} -view {C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/long/Desktop/HW04_MIPS_RegFile_Chen/simulation_sources/regfile_wave.wcfg
+source regfile_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 300ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 300ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 29 03:02:31 2017...
