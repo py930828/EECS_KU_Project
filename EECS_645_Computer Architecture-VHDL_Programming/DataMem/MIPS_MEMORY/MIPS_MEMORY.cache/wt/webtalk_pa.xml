@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Thu Oct 05 18:35:30 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="1c3fc3f83e21420682099decd7e9fcae" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="3" type="JavaHandler"/>
+<property name="SimulationClose" value="7" type="JavaHandler"/>
+<property name="SimulationRun" value="8" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="1" type="JavaHandler"/>
+<property name="ViewTaskSimulation" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="APPLY, Apply" value="2" type="GuiResourceData"/>
+<property name="DataMem.vhd, 0, 220" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 101, 629" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 109, 517" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 114, 617" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 116, 459" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 117, 403" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 118, 615" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 122, 409" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 124, 461" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 124, 654" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 124, 654, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 125, 266" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 128, 460" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 129, 620" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 130, 463" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 131, 461, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 132, 519" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 132, 653" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 133, 653" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 136, 613" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 137, 613" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 138, 333" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 138, 334" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 142, 550" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 149, 637" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 156, 325" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 164, 521" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 164, 521, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 165, 117" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 168, 117" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 170, 464" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 173, 396" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 174, 620" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 181, 135" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 181, 390" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 184, 539" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 185, 466" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 185, 577" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 186, 583" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 186, 599" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 187, 618" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 192, 615" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 194, 594" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 196, 652" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 198, 594" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 199, 402" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 200, 506" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 204, 477" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 206, 446" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 208, 323" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 209, 478" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 209, 655" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 213, 252" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 214, 297" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 216, 525" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 230, 518" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 230, 552" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 232, 633" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 241, 453" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 243, 634" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 245, 483" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 246, 466" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 248, 81" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 251, 483" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 252, 594" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 253, 618" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 255, 557" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 255, 633" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 257, 521" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 257, 556" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 257, 576" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 261, 517" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 271, 293" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 277, 594" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 278, 481" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 279, 487" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 281, 449" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 281, 479" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 281, 491" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 284, 447" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 284, 478" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 285, 486" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 285, 649" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 286, 482" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 286, 507" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 286, 512" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 287, 509" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 288, 474" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 290, 482" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 291, 502" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 292, 511" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 295, 503" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 297, 328" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 298, 508" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 298, 516" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 299, 508" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 304, 504" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 313, 483" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 316, 469" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 33, 97" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 331, 444" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 332, 60" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 334, 176" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 341, 489" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 350, 487" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 351, 251" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 352, 251" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 359, 517" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 362, 427" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 391, 427" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 392, 428" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 397, 428" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 397, 571" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 400, 339" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 401, 558" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 424, 332" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 424, 349" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 424, 562" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 431, 284" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 432, 582" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 436, 581" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 441, 248" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 447, 462" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 466, 561" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 468, 196" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 468, 219" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 500, 188" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 506, 175" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 517, 150" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 57, 521" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 62, 252" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 63, 446" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 65, 520" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 65, 521" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 65, 522" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 67, 521" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 86, 629" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 86, 630" value="1" type="GuiResourceData"/>
+<property name="DataMem.vhd, 92, 103" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="3" type="GuiResourceData"/>
+<property name="NEXT, Next " value="6" type="GuiResourceData"/>
+<property name="OK, OK" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, Add or create simulation sources" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_GENERAL_SETTINGS, Verilog" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="8" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, DataMem - behav (DataMem.vhd" value="5" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Project Settings], 1, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager], 0, true" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="8" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Simulation Settings], 10, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation], 9, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, Create New Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, MIPS_MEMORY" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectSettingsGeneralPage_TARGET_LANGUAGE, VHDL, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_ELABORATION, Elaboration, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_SIMULATION, Simulation, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, Add Directories" value="2" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="12" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_IN, Waveform Viewer_zoom_in" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1019, 68" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1033, 126" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1048, 68" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1079, 67" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1085, 71" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1114, 70" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 119, -35" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1271, 143" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1308, 251" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1331, 135" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1354, 143" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 142, 193" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 147, -28" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1474, 133" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 148, 69" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 152, 67" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 179, -34" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 183, 81" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 186, 85" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1868, 70" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 199, 67" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 204, 81" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 207, 69" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 222, 190" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 223, 73" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 223, 82" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 224, -29" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 254, 9" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 314, 190" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 404, 193" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 43, 190" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 467, 191" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 538, 193" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 568, 193" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 747, 43" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 75, 191" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 79, 76" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 910, 74" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, DataMem_wave.wcfg" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="53" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="47" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
