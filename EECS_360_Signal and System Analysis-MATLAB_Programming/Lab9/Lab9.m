@@ -1,0 +1,112 @@
+clear all;
+T=1.28;
+fo=1/T;
+f=0:fo:50;
+tau=0.01;
+M=T/tau;
+m=0:M-1;
+n=f/fo;
+f=0:fo:50;
+t=m*tau;
+x=exp(-t);
+tic
+y=fft(x);
+tfft1=toc;
+y=y*tau;
+sum=0;
+tic
+for m=0:M-1
+    sum=sum+(exp(-1*tau*m)*exp((-j*2*pi*n*m)/M));
+end
+tsum1=toc;
+sum=sum*tau;
+figure(1);
+subplot(211);
+plot(abs(y));
+legend('fft')
+subplot(212);
+plot(f,abs(sum));
+legend('sum')
+% Figure angle
+figure(4);
+subplot(221);
+plot(angle(y));
+legend('fft');
+subplot(222);
+plot(f,angle(sum));
+legend('sum')
+
+% T = 0.5
+figure(2);
+T=0.5;
+fo=1/T;
+f=0:fo:50;
+tau=0.01;
+M=T/tau;
+m=0:M-1;
+n=f/fo;
+f=0:fo:50;
+t=m*tau;
+x=exp(-t);
+tic
+y=fft(x);
+tfft2=toc;
+y=y*tau;
+sum=0;
+tic
+for m=0:M-1
+    sum=sum+(exp(-1*tau*m)*exp((-j*2*pi*n*m)/M));
+end
+tsum2=toc;
+sum=sum*tau;
+subplot(211);
+plot(abs(y));
+legend('fft')
+subplot(212);
+plot(f,abs(sum));
+legend('sum')
+% Figure angle
+figure(5);
+subplot(221);
+plot(angle(y));
+legend('fft');
+subplot(222);
+plot(f,angle(sum));
+legend('sum');
+% T = 12.5
+figure(3);
+T=12.5;
+fo=1/T;
+f=0:fo:50;
+tau=0.01;
+M=T/tau;
+m=0:M-1;
+n=f/fo;
+f=0:fo:50;
+t=m*tau;
+x=exp(-t);
+y=fft(x);
+tic
+y=y*tau;
+tfft3=toc
+sum=0;
+tic
+for m=0:M-1
+    sum=sum+(exp(-1*tau*m)*exp((-j*2*pi*n*m)/M));
+end
+tsum3=toc
+sum=sum*tau;
+subplot(211);
+plot(abs(y));
+legend('fft')
+subplot(212);
+plot(f,abs(sum));
+legend('sum')
+% Figure angle
+figure(6);
+subplot(221);
+plot(angle(y));
+legend('fft');
+subplot(222);
+plot(f,angle(sum));
+legend('sum');
