@@ -1,0 +1,46 @@
+==422== Memcheck, a memory error detector
+==422== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==422== Using Valgrind-3.9.0 and LibVEX; rerun with -h for copyright info
+==422== Command: /home/l115c442/EECS_678/quash/quash
+==422== 
+==592== 
+==592== HEAP SUMMARY:
+==592==     in use at exit: 4 bytes in 1 blocks
+==592==   total heap usage: 21 allocs, 20 frees, 23,153 bytes allocated
+==592== 
+==592== LEAK SUMMARY:
+==592==    definitely lost: 0 bytes in 0 blocks
+==592==    indirectly lost: 0 bytes in 0 blocks
+==592==      possibly lost: 0 bytes in 0 blocks
+==592==    still reachable: 4 bytes in 1 blocks
+==592==         suppressed: 0 bytes in 0 blocks
+==592== Reachable blocks (those to which a pointer was found) are not shown.
+==592== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==592== 
+==592== For counts of detected and suppressed errors, rerun with: -v
+==592== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
+==654== 
+==654== HEAP SUMMARY:
+==654==     in use at exit: 4 bytes in 1 blocks
+==654==   total heap usage: 30 allocs, 29 frees, 27,037 bytes allocated
+==654== 
+==654== LEAK SUMMARY:
+==654==    definitely lost: 0 bytes in 0 blocks
+==654==    indirectly lost: 0 bytes in 0 blocks
+==654==      possibly lost: 0 bytes in 0 blocks
+==654==    still reachable: 4 bytes in 1 blocks
+==654==         suppressed: 0 bytes in 0 blocks
+==654== Reachable blocks (those to which a pointer was found) are not shown.
+==654== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==654== 
+==654== For counts of detected and suppressed errors, rerun with: -v
+==654== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
+==422== 
+==422== HEAP SUMMARY:
+==422==     in use at exit: 0 bytes in 0 blocks
+==422==   total heap usage: 40 allocs, 40 frees, 30,929 bytes allocated
+==422== 
+==422== All heap blocks were freed -- no leaks are possible
+==422== 
+==422== For counts of detected and suppressed errors, rerun with: -v
+==422== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
