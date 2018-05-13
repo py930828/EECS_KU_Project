@@ -1,0 +1,192 @@
+#include <iostream>
+#include <math.h>
+#include <cuda.h>
+#include <stdio.h>
+#include <fstream>
+#include <string>
+#include "ImageWriter.h"
+#include <algorithm>
+using namespace std;
+
+char **argv;
+
+//MAX
+__global__ void kernel_MAX(unsigned char* voxelData, int* pixelDepth,float* d_pixelWeights, float* d_maxWeightedSum)
+{
+int threadNum = blockDim.x*blockIdx.x+threadIdx.x;
+d_pixelWeights[threadNum] = 0.0;
+for(int z = 0; z<*pixelDepth; z++)
+{
+if((int)voxelData[threadNum] < (int)voxelData[threadNum+z*blockDim.x*gridDim.x]){
+voxelData[threadNum]      = voxelData[threadNum+z*blockDim.x*gridDim.x];
+}
+d_pixelWeights[threadNum] += ((z+1)/(*pixelDepth * 1.0))  * voxelData[threadNum+z*gridDim.x*blockDim.x];
+}
+atomicMax( d_maxWeightedSum,  d_pixelWeights[threadNum] );
+}
+
+//SUM
+__global__ void kernel_SUM( float* d_pixelWeights, unsigned char* d_FinalWeightedSum, float* d_maxWeightedSum )
+{
+float myMax = d_pixelWeights[blockDim.x*blockIdx.x + threadIdx.x];
+float globalMax = *d_maxWeightedSum;
+unsigned char result = (unsigned char)( ( myMax/globalMax )*255.0 );
+d_FinalWeightedSum[blockDim.x*blockIdx.x + threadIdx.x] = result;
+}
+
+int index(int nRows, int nCols, int nSheets, int rowIndex, int collumnIndex,int sheetIndex,int pt)
+{
+  switch (pt)
+  {
+    case 1:
+            return(sheetIndex*nRows*nCols+collumnIndex*nRows+rowIndex);
+    case 2:
+            return((nSheets-1-sheetIndex)*nCols*nRows + (nCols-1-collumnIndex)*nRows + rowIndex);
+    case 3:
+            return(nRows*nSheets*collumnIndex + (nSheets-1-sheetIndex)*nRows +rowIndex);
+    case 4:
+            return(nRows*nSheets*(nCols-1- collumnIndex) + sheetIndex*nRows +rowIndex);
+    case 5:
+            return(rowIndex*nCols*nSheets +nSheets*collumnIndex+(nSheets-1-sheetIndex));
+    case 6:
+            return((nRows-1- rowIndex)*nCols*nSheets +nSheets*collumnIndex+sheetIndex);
+
+  }
+  return 0;
+}
+void kernelHandler(int nRows, int nCols, int nSheets, char* inFile, int projectionType)
+{
+  int newNCols;
+int newNRows;
+int newNSheets;
+
+int size = nRows * nCols * nSheets;
+ifstream s(inFile);
+unsigned char* raw_voxelData = new unsigned char[size];
+s.read(reinterpret_cast<char*>(raw_voxelData), size);
+s.close();
+unsigned char* h_voxelData = new unsigned char[nRows*nSheets*nCols];
+switch(projectionType)
+{
+case 1: //0 degree roation 0ol n = n
+    newNCols = nCols;
+newNRows = nRows;
+newNSheets = nSheets;
+break;
+
+case 2: //view from back
+    newNCols = nCols;
+newNRows = nRows;
+newNSheets = nSheets;
+break;
+
+case 3: //view from right side
+newNCols = nSheets;
+newNRows = nRows;
+newNSheets = nCols;
+break;
+
+case 4: //view from left
+    newNCols = nSheets;
+newNRows = nRows;
+newNSheets = nCols;
+break;
+
+case 5: // view from above
+    newNCols = nRows;
+newNRows = nSheets;
+newNSheets = nCols;
+break;
+
+case 6://view from below
+    newNCols = nRows;
+newNRows = nSheets;
+newNSheets = nCols;
+break;
+}
+  int counter =0;
+  for(int sheetIndex = 0; sheetIndex<newNSheets; sheetIndex++)
+  {
+    for(int collumnIndex = 0; collumnIndex<newNCols; collumnIndex++)
+    {
+      for(int rowIndex = 0; rowIndex<newNRows; rowIndex++)
+      {
+        int newPerspective = index(newNRows,newNCols,newNSheets,rowIndex,collumnIndex,sheetIndex,projectionType);
+        if(newPerspective > newNRows * newNSheets * newNCols-1)
+        {
+          cout<<newPerspective<<endl;
+        }
+        h_voxelData[counter] = raw_voxelData[newPerspective];
+        counter++;
+      }
+    }
+  }
+//variables
+unsigned char* h_MAX_data = new unsigned char[newNRows*newNCols];
+unsigned char *d_voxelData;
+unsigned char* h_FinalWeighedSum;
+unsigned char*   d_FinalWeightedSum;
+int* newNSheetsPtr = new int[1];
+newNSheetsPtr[0] = newNSheets;
+float* d_pixelWeights;
+float* d_maxWeightedSum;
+int* d_relativeDepth;
+int charOneSheet = sizeof(char)*newNCols*newNRows;
+int charAllSheet = sizeof(char)*newNCols*newNRows*newNSheets;
+
+
+
+//allocate memory for gpu device
+cudaMalloc((void**)&d_voxelData,charAllSheet);
+cudaMalloc((void**)&d_relativeDepth,sizeof(int));
+cudaMalloc( (void **)&d_pixelWeights, sizeof(float) * newNRows * newNCols );
+cudaMalloc( (void **)&d_maxWeightedSum, sizeof(float) );
+//copy MAX data to buffers on device
+cudaMemcpy(d_voxelData,h_voxelData,charAllSheet,cudaMemcpyHostToDevice);
+cudaMemcpy(d_relativeDepth,newNSheetsPtr,sizeof(int),cudaMemcpyHostToDevice);
+kernel_MAX<<<newNCols,newNRows>>>(d_voxelData,d_relativeDepth,d_pixelWeights,d_maxWeightedSum);
+
+cudaDeviceSynchronize();
+// Copy MAX data from device memory to host memory
+cudaMemcpy(h_MAX_data,d_voxelData,charOneSheet,cudaMemcpyDeviceToHost);
+
+h_FinalWeighedSum = h_MAX_data;
+d_FinalWeightedSum = d_voxelData;
+
+//write the file
+string FileName(argv[6]);
+string maxFileName = FileName+"MAX.png";
+transpose(h_MAX_data,        newNCols, newNRows);
+writeTheFile(maxFileName,newNCols,newNRows,h_MAX_data);
+
+kernel_SUM<<<newNCols,newNRows>>>( d_pixelWeights, d_FinalWeightedSum, d_maxWeightedSum );
+cudaDeviceSynchronize();
+cudaMemcpy( h_FinalWeighedSum, d_FinalWeightedSum, newNRows * newNCols * sizeof(unsigned char), cudaMemcpyDeviceToHost);
+
+//write the file
+string sumFileName = FileName+"SUM.png";
+transpose(h_FinalWeighedSum, newNCols, newNRows);
+writeTheFile(sumFileName,newNCols,newNRows,h_FinalWeighedSum);
+
+// Free device memory
+cudaFree(d_relativeDepth);
+cudaFree(d_voxelData);
+}
+
+
+int main(int argc, char** argv)
+{
+::argv = argv;
+int nRows = atoi( argv[1] );
+int nCols = atoi(argv[2]);
+int nSheets = atoi(argv[3]);
+int pt = atoi(argv[5]);
+string outFile = argv[6];
+kernelHandler(nRows,nCols,nSheets,argv[4],pt);
+cudaError_t err = cudaDeviceSynchronize();
+if ( err != cudaSuccess )
+{
+printf("%s", cudaGetErrorString(err));
+}
+return 0;
+}
