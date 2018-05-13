@@ -1,0 +1,72 @@
+$(PROG_NAME	Makefile	/^$(PROG_NAME): $(SRC)$/
+%.o	Makefile	/^%.o: %.c$/
+CFLAGS	Makefile	/^CFLAGS		:= -Wall$/
+COSINE_ONE	simple.h	4
+COSINE_TWO	simple.h	5
+Code	dot_emacs	16
+Commentary	dot_emacs	5
+Indentation	dot_emacs	49
+LDFLAGS	Makefile	/^LDFLAGS		:= -lm$/
+LOOP_NUM	simple.h	6
+Msimple	simple.c	/^int main(int argc, char **argv)$/
+PRINT_NUM	simple.h	7
+PROG_NAME	Makefile	/^PROG_NAME	:= lab1$/
+Robinson	dot_emacs	3
+SRC	Makefile	/^SRC		:= $(patsubst %.c, %.o, $(wildcard *.c))$/
+__SIMPLE_H__	simple.h	2
+all	Makefile	/^all: execute$/
+appear	dot_emacs	167
+are	dot_emacs	9
+be	dot_emacs	115
+bell	dot_emacs	129
+certain	dot_emacs	107
+clean	Makefile	/^clean:$/
+column	dot_emacs	18
+display_onto_stdout	simple.c	/^void display_onto_stdout(const char *str)$/
+execute	Makefile	/^execute: $(PROG_NAME)$/
+features	dot_emacs	69
+find	dot_emacs	166
+find_cosine	simple.c	/^double find_cosine(double value)$/
+he su	dot_emacs	9
+here	dot_emacs	124
+http	dot_emacs	51
+http	dot_emacs	52
+https	dot_emacs	20
+into	dot_emacs	10
+length	dot_emacs	33
+like	dot_emacs	87
+line	dot_emacs	32
+mode	dot_emacs	45
+mode	dot_emacs	88
+mode	dot_emacs	112
+mode	dot_emacs	122
+ngua	dot_emacs	111
+number	dot_emacs	44
+of	dot_emacs	74
+options	dot_emacs	19
+options	dot_emacs	35
+options	dot_emacs	50
+options	dot_emacs	63
+options	dot_emacs	136
+packages	dot_emacs	151
+packages	dot_emacs	171
+q	dot_emacs	29
+run	dot_emacs	108
+script	dot_emacs	1
+semantic	dot_emacs	114
+setup	dot_emacs	135
+sour	dot_emacs	13
+space	dot_emacs	42
+spaces	dot_emacs	59
+tar	Makefile	/^tar: $/
+textwidth	dot_vimrc	24
+that	dot_emacs	105
+the	dot_emacs	161
+the	dot_emacs	169
+then	dot_emacs	109
+useless_loop	simple.c	/^void useless_loop(int iterations)$/
+various	dot_emacs	7
+will	dot_emacs	106
+wish	dot_emacs	154
+with	dot_emacs	122
+you	dot_emacs	170
